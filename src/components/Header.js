@@ -1,11 +1,10 @@
-
 import React from 'react';
 import './Header.css';
-import logo from '../images/logo.png'; // replace with your logo path
+import logo from '../images/Logo.svg'; // replace with your logo path
 
 function Header() {
   return (
-    <header>
+    <header className="header">
       <img src={logo} alt="Little Lemon Logo" className="logo" />
       <nav>
         <ul>

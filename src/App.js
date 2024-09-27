@@ -1,4 +1,3 @@
-// src/App.js
 import React from 'react';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection.js';
@@ -8,15 +7,14 @@ import './App.css';
 
 function App() {
   return (
-    <>
+    <div className="flex-container">
       <Header />
-      <main>
-        <HeroSection />
-        <Highlights />
-      </main>
+      <HeroSection />
+      <Highlights />
       <Footer />
-    </>
+    </div>
   );
 }
+
 
 export default App;

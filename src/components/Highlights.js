@@ -1,4 +1,3 @@
-// src/components/Highlights.js
 import React from 'react';
 import './Highlights.css';
 
@@ -19,7 +18,7 @@ const specials = [
     name: 'Lemon Dessert',
     description: 'This comes straight from grandma’s recipe book, every last ingredient has been sourced...',
     price: '$5.00',
-    image: 'path/to/lemon-dessert.jpg'
+    image: '../images/lemon dessert.jpg'
   }
 ];
 
