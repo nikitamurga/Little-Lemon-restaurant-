@@ -1,0 +1,30 @@
+
+.highlights {
+    padding: 40px;
+    background-color: #f8f8f8;
+  }
+
+  .specials-grid {
+    display: flex;
+    gap: 20px;
+  }
+
+  .special-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+
+  .special-image {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .order-button {
+    background-color: #ffc107;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }

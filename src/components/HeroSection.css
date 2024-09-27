@@ -1,0 +1,24 @@
+/* src/components/HeroSection.css */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #d4e2d4;
+  }
+
+  .hero-content {
+    max-width: 50%;
+  }
+
+  .hero-image {
+    width: 300px;
+    height: auto;
+  }
+
+  .reserve-button {
+    background-color: #ffc107;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
