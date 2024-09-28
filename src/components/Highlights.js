@@ -1,32 +1,37 @@
 import React from 'react';
 import './Highlights.css';
+import greekSaladImage from '../images/greek salad.jpg';
+import bruschettaImage from '../images/bruchetta.svg';
+import lemonDessertImage from '../images/lemon dessert.jpg';
 
 const specials = [
   {
     name: 'Greek Salad',
     description: 'The famous Greek salad of crispy lettuce, peppers, olives, and our Chicago style feta cheese...',
     price: '$12.99',
-    image: 'path/to/greek-salad.jpg'
+    image: greekSaladImage,
   },
   {
     name: 'Bruschetta',
     description: 'Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt...',
     price: '$5.89',
-    image: 'path/to/bruschetta.jpg'
+    image: bruschettaImage,
   },
   {
     name: 'Lemon Dessert',
     description: 'This comes straight from grandma’s recipe book, every last ingredient has been sourced...',
     price: '$5.00',
-    image: '../images/lemon dessert.jpg'
-  }
+    image: lemonDessertImage,
+  },
 ];
 
 function Highlights() {
   return (
     <section className="highlights">
-      <h2>This week's specials!</h2>
-      <button className="menu-button">Online Menu</button>
+      <div className="highlights-header">
+        <h2>This week's specials!</h2>
+        <button className="menu-button">Online Menu</button>
+      </div>
       <div className="specials-grid">
         {specials.map((item, index) => (
           <div key={index} className="special-card">

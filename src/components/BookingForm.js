@@ -10,7 +10,7 @@ function BookingForm({ availableTimes, dispatch, submitForm }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    submitForm(formData); // Отправляем данные формы
+    submitForm(formData);
   };
 
   const handleChange = (e) => {
@@ -19,7 +19,7 @@ function BookingForm({ availableTimes, dispatch, submitForm }) {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label htmlFor="date">Выберите дату</label>
+      <label htmlFor="date">Date</label>
       <input
         type="date"
         id="date"
@@ -28,7 +28,7 @@ function BookingForm({ availableTimes, dispatch, submitForm }) {
         onChange={handleChange}
       />
 
-      <label htmlFor="time">Выберите время</label>
+      <label htmlFor="time">Time</label>
       <select
         id="time"
         name="time"
@@ -40,7 +40,7 @@ function BookingForm({ availableTimes, dispatch, submitForm }) {
         ))}
       </select>
 
-      <label htmlFor="guests">Количество гостей</label>
+      <label htmlFor="guests">Guests</label>
       <input
         type="number"
         id="guests"
@@ -51,18 +51,19 @@ function BookingForm({ availableTimes, dispatch, submitForm }) {
         onChange={handleChange}
       />
 
-      <label htmlFor="occasion">Событие</label>
+      <label htmlFor="occasion">Occasion</label>
       <select
         id="occasion"
         name="occasion"
         value={formData.occasion}
         onChange={handleChange}
       >
-        <option value="Birthday">День рождения</option>
-        <option value="Anniversary">Годовщина</option>
+        <option value="Birthday">Birthday</option>
+        <option value="Anniversary">Anniversary</option>
+        <option value="Nothing">No special occasion</option>
       </select>
 
-      <button type="submit">Забронировать</button>
+      <button type="submit">Book</button>
     </form>
   );
 }

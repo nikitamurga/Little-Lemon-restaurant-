@@ -19,18 +19,17 @@ function updateTimes(state, action) {
 
 function BookingPage() {
   const [availableTimes, dispatch] = useReducer(updateTimes, [], initializeTimes);
-  const navigate = useNavigate(); // Используем хук useNavigate
+  const navigate = useNavigate();
 
-  // Функция для отправки формы
   function submitForm(formData) {
     if (submitAPI(formData)) {
-      navigate('/confirmed'); // Перейти на страницу подтверждения
+      navigate('/confirmed');
     }
   }
 
   return (
     <div>
-      <h2>Забронировать столик</h2>
+      <h2>Book a table</h2>
       <BookingForm availableTimes={availableTimes} dispatch={dispatch} submitForm={submitForm} />
     </div>
   );

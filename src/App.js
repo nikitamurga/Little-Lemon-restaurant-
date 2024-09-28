@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import BookingPage from './components/BookingPage';
-import ConfirmedBooking from './components/ConfirmedBooking'; // Импорт компонента подтверждения
+import ConfirmedBooking from './components/ConfirmedBooking';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import Highlights from './components/Highlights';
@@ -15,19 +15,16 @@ function App() {
         <Header />
         <main>
           <Routes>
-            {/* Главная страница */}
-            <Route 
-              path="/" 
+            <Route
+              path="/"
               element={
                 <>
                   <HeroSection />
                   <Highlights />
                 </>
-              } 
+              }
             />
-            {/* Страница бронирования */}
             <Route path="/reservations" element={<BookingPage />} />
-            {/* Страница подтверждения */}
             <Route path="/confirmed" element={<ConfirmedBooking />} />
           </Routes>
         </main>

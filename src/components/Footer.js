@@ -1,12 +1,12 @@
-// src/components/Footer.js
 import React from 'react';
 import './Footer.css';
+import logo from '../images/Logo.svg';
 
 function Footer() {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <img src="../images/Logo.svg" alt="Little Lemon Logo" className="footer-logo" />
+      <img src={logo} alt="Little Lemon Logo" className="logo" />
         <div className="footer-links">
           <ul>
             <li><a href="#home">Home</a></li>
